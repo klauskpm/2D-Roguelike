@@ -16,7 +16,7 @@ public class Player : MovingObject {
 	// Use this for initialization
 	protected override void Start ()
     {
-        animator.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         food = GameManager.instance.playerFoodPoints;
 
